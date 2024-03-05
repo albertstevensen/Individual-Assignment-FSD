@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.login-form,
+.login-art {
+    margin: 0.625rem;
+}
+
+.login-form {
+    width: 24.25rem;
+    height: 33.563rem;
+    padding-top: 16.844rem;
+    padding-bottom: 16.844rem;
+    padding-left: 17rem;
+    padding-right: 13.375rem;
+}
+
+.intro {
+    height: 8rem;
+    font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    letter-spacing: 1%;
+}
+
+#welcome-back-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-left: 0.25rem;
+    margin-top: -0.625rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.intro > p {
+    height: 4rem;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 1%;
+    line-height: 2rem;
+}
+
+.input-form {
+    margin-top: 3rem;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text-field {
+    width: 24.25rem;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.text-field > label{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 1%;
+    color: #0C1421;
+}
+
+.text-field > input {
+    width: 24.25rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    background: #F7FBFF;
+    border: 1px solid #D4D7E3;
+    padding-left: 1rem;
+}
+
+::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #8897AD;
+    position: relative;
+    letter-spacing: 0.01em;
+    line-height: 1rem;
+}
+
+.forgot-pass {
+    width: 24.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 1rem;
+}
+
+.forgot-pass > a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 1%;
+    color: #1E4AE9;
+}
+
+button {
+    width: 25rem;
+    height: 3.25rem;
+    border-radius: 0.75rem;
+    color: #ffff;
+    background-color: #162D3A ;
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: 1%;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+.sign-up {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.sign-up > p {
+    color: #313957;
+    font-size: 1.125rem;
+    line-height: 1.8rem;
+    letter-spacing: 1%;
+}
+
+.sign-up > p > span > a {
+    color: #1E4AE9;
+    text-decoration: none;
+    padding-left: 0.313rem;
+}
+
+.footer {
+    margin-top: 8.563rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #959CB6;
+}
+
+#login-art-img {
+    width: 51rem;
+    height: 67.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 0;
+        margin-top: 1.688rem;
+        height: 34.25rem;
+    }
+
+    .footer {
+        margin-top: 1.688rem;
+        display: flex;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        vertical-align: middle;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #959CB6;
+    }
+
+    .sign-up {
+        margin-top: 3rem;
+        margin-bottom: 9.5rem;
+        display: flex;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+    }
+
+    .login-art {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #login-art-img {
+        width: 24.375rem;
+        height: 11.25rem;
+        border-radius: 1.25rem;
+    }
+}
